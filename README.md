@@ -1,4 +1,5 @@
-# Modifying TriFrame Resources
+# Lab
+## Arbiter: Intro to State
 
 1. Clone down this repo
 2. cd into the repository, then install dependencies using `npm install`
