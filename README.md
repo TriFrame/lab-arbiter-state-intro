@@ -1,5 +1,6 @@
-# Lab
-## Arbiter: Intro to State
+# Lab Arbiter- State in Real-Time
+
+### Deliverables
 
 1. Clone down this repo
 2. cd into the repository, then install dependencies using `npm install`
@@ -15,3 +16,15 @@
 9. Duplicate your browser tab and split your screen, so that you're seeing the same page side by side, with the developer console still open in one
 10. Run `pet.name = 'Annie' in the developer console.
 	* Notice that the page updated in **both** browser tabs. That's because, in the background, TriFrame is using websocket connections to keep state synchronized between all browsers connected!
+
+### Bonus
+`@triframe/designer` exports a `TextInput` component that can be used to get input from the user.
+1. Import `TextInput` from `@triframe/designer`
+2. Render `TextInput` below your `h1` tag (remember to wrap both in a contianing element, a fragment (<></>) or div)
+3. Pass `TextInput` a `value` prop of `pet.name`. 
+	* At this point, you should see the pet's name inside of a `TextInput`
+4. Pass `TextInput` an `onChange` prop. The prop should be a callback function, which will be called with the updated user input. Use this variable to update the pet's name, like so:
+```js
+	<TextInput value={pet.name} onChange={newName => pet.name = newName}>
+```
+5. Now you should be able to change the pet's name, and watch it update in `h1` tag, and even other browsers, in real-time!
