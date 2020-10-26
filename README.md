@@ -1,4 +1,4 @@
-# Lab: Arbiter- State in Real-Time
+# Lab: Arbiter- State in Real-Time!
 
 ### Deliverables
 
