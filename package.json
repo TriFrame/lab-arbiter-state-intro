@@ -18,7 +18,7 @@
     "@babel/cli": "^7.12.1",
     "@triframe/confectioner": "0.0.3",
     "@triframe/designer": "^0.5.9",
-    "@triframe/mason": "^0.2.2",
+    "@triframe/mason": "^0.2.3",
     "babel-preset-triframe": "0.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
